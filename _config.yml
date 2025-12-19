@@ -2,3 +2,7 @@ remote_theme: pages-themes/hacker@v0.2.0
 title: PaulHermans.eu personal site of Paul Hermans
 description: Personal site and blog of Paul Hermans
 show_downloads: false
+header_pages:
+  - index.html
+  - configuring-ssl-for-powerdns-api.html
+  - about-me.html
