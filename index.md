@@ -1,5 +1,7 @@
 ---
+title: Personal website of Paul Hermans
 layout: default
+nav: true
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~, ~~test~~ .
