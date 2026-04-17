@@ -1,25 +1,18 @@
 ---
-title: Personal website of Paul Hermans
 layout: default
-nav: true
+title: Home
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~, ~~test~~ .
+# Welcome
 
-[Configuring-ssl-for-powerdns-api](./configuring-ssl-for-powerdns-api.html).
+Welcome to my personal website. Here you'll find information about me and my projects.
 
-# Welcome to the blog of Paul Hermans
+## Latest Updates
 
-This page uses Github Pages and the Jekyll Architect theme.
+- Website launched with a clean, simple design
+- Military green theme for a professional look
+- Easy to navigate
 
-## ToDo list
-
-- Creating repository
-- Figuring out Jekyll themes
-- Creating a menu with subpages
-- Migrating data from paulhermans.eu site
-- Change DNS settings to connect domainname to Github pages
-- Cancel hosting at pikapods.com for paulhermans.eu
 
 > This is a blockquote following a header.
 >
