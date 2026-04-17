@@ -7,3 +7,9 @@ markdown: kramdown
 header_pages:
   - about.md
   - blog.md
+
+# Collections for blog posts
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
