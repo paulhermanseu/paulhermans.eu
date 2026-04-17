@@ -22,6 +22,8 @@ Jekyll is a static site generator that transforms your plain text into beautiful
 2. Create a Repository for your site
 3. Go to your Repository Settings > Pages
 4. Point your domainname DNS settings to Github
-5. Ask your favorite AI tool for further Jekyll intructions
+5. More information here: [https://pages.github.com/](https://pages.github.com/)
+6. Getting started here: [https://github.com/skills/github-pages](https://github.com/skills/github-pages)
+7. Ask your favorite AI tool for further instructions
 
 Have a look at my repository for inspiration: [https://github.com/paulhermanseu/paulhermans.eu](https://github.com/paulhermanseu/paulhermans.eu)
