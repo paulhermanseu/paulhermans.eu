@@ -1,4 +1,3 @@
 source 'https://rubygems.org'
-gem 'jekyll'
-gem 'github-pages'
-gem 'jekyll-seo-tag'
+gem 'jekyll', '~> 4.3'
+gem 'github-pages', group: :jekyll_plugins
