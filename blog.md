@@ -3,11 +3,9 @@ layout: default
 title: Blog
 ---
 
-# Blog
+# Latest Blog Posts
 
 Welcome to my blog where I share thoughts and tutorials.
-
-## Latest Posts
 
 {% for post in site.posts %}
   <article>
