@@ -14,6 +14,8 @@ Welcome to my personal website. Here you'll find information about me and my pro
 - Easy to navigate
 
 
+## Sample data for Markdown
+
 > This is a blockquote following a header.
 >
 > When something is important enough, you do it even if the odds are not in your favor.
