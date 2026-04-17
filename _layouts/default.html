@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -81,25 +83,133 @@
             border-radius: 8px;
         }
         
-        h2 {
+        /* Markdown Content Styling */
+        main h1 {
             color: #2d5016;
             margin-top: 2rem;
             margin-bottom: 1rem;
+            font-size: 2em;
+            border-bottom: 2px solid #3d6b1f;
+            padding-bottom: 0.5rem;
         }
         
-        h3 {
+        main h2 {
+            color: #2d5016;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5em;
+        }
+        
+        main h3 {
+            color: #3d6b1f;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.2em;
+        }
+        
+        main h4, main h5, main h6 {
             color: #3d6b1f;
             margin-top: 1rem;
             margin-bottom: 0.5rem;
         }
         
-        a {
-            color: #2d5016;
-            text-decoration: none;
+        main p {
+            margin-bottom: 1rem;
         }
         
-        a:hover {
+        main ul, main ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        main li {
+            margin-bottom: 0.5rem;
+        }
+        
+        main ul ul, main ol ol, main ul ol, main ol ul {
+            margin-top: 0.5rem;
+            margin-left: 2rem;
+        }
+        
+        main code {
+            background-color: #f4f4f4;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9em;
+            color: #e83e8c;
+        }
+        
+        main pre {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        
+        main pre code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+            border-radius: 0;
+        }
+        
+        main blockquote {
+            border-left: 4px solid #3d6b1f;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #666;
+            font-style: italic;
+        }
+        
+        main hr {
+            border: none;
+            height: 2px;
+            background-color: #3d6b1f;
+            margin: 2rem 0;
+        }
+        
+        main table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1rem 0;
+        }
+        
+        main th, main td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        
+        main th {
+            background-color: #2d5016;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        main tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        main a {
+            color: #2d5016;
+            text-decoration: none;
+            border-bottom: 1px solid #2d5016;
+        }
+        
+        main a:hover {
             text-decoration: underline;
+            color: #3d6b1f;
+        }
+        
+        main img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem 0;
         }
         
         footer {
@@ -138,5 +248,13 @@
     <footer>
         <p>&copy; 2026 {{ site.title }}. All rights reserved.</p>
     </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((el) => {
+                hljs.highlightElement(el);
+            });
+        });
+    </script>
 </body>
 </html>
