@@ -5,8 +5,6 @@ title: Blog
 
 # Latest Blog Posts
 
-Welcome to my blog where I share thoughts and tutorials.
-
 {% for post in site.posts %}
   <article>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -16,7 +14,5 @@ Welcome to my blog where I share thoughts and tutorials.
         | <span class="categories">{{ post.categories | join: ", " }}</span>
       {% endif %}
     </p>
-    <!--<div class="excerpt">{{ post.excerpt }}</div>
-    <a href="{{ post.url }}">Read more →</a>-->
   </article>
 {% endfor %}
