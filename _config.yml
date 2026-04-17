@@ -1,2 +1,9 @@
-plugins:
-  - jekyll-seo-tag
+title: Paul Hermans
+description: My personal website
+baseurl: ""
+url: "https://paulhermans.eu"
+markdown: kramdown
+
+header_pages:
+  - about.md
+  - blog.md
