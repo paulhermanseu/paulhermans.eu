@@ -9,7 +9,7 @@ header_pages:
   - blog.md
 
 # Collections for blog posts
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title/
+#collections:
+#  posts:
+#    output: true
+#    permalink: /blog/:title/
