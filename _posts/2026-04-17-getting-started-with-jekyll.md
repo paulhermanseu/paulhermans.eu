@@ -5,7 +5,13 @@ date: 2026-04-17 10:30:00
 categories: Web
 ---
 
-# Getting Started with Jekyll
+# Github pages and Jekyll
+
+You want a simple website without the hassle of a webhosting account and a CMS like WordPress?
+
+Try out Github Pages and Jekyll!
+
+## What is Jekyll?
 
 Jekyll is a static site generator that transforms your plain text into beautiful static websites.
 
