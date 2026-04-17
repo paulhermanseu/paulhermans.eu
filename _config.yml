@@ -1,5 +1,5 @@
 title: Paul Hermans
-description: My personal website
+description: Personal website of Paul Hermans, former webhosting provider now in sabbatical.
 baseurl: ""
 url: "https://paulhermans.eu"
 markdown: kramdown
@@ -12,4 +12,4 @@ header_pages:
 collections:
   posts:
     output: true
-    permalink: /blog/:year/:month/:day/:title/
+    permalink: /blog/:title/
