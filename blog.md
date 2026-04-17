@@ -22,3 +22,14 @@ Welcome to my blog where I share thoughts and tutorials.
     <a href="{{ post.url }}">Read more →</a>
   </article>
 {% endfor %}
+
+
+## Latest Posts 2
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
