@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Home
+title: Configuring SSL for PowerDNS API
+date: 2025-07-04 11:45:00
+categories: PowerDNS
 ---
 
 # Configuring SSL for PowerDNS API
