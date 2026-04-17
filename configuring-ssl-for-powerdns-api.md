@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 # Configuring SSL for PowerDNS API
 
 This page provides a step-by-step guide to configuring SSL for the PowerDNS API using Nginx as a reverse proxy.
