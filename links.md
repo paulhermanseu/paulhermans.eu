@@ -23,11 +23,17 @@ Sure you will have to adapt to another Office Suite but it's free and works grea
 
 ### Jitsi Meet (Video conferencing)
 
+Reject Microsoft Teams meeting requests, reply with a Jitsi meet conference link :)
+
 Jitsi Meet is a fully encrypted, open source video conferencing solution, no account needed [Jitsi Meet](https://jitsi.org/jitsi-meet/)
 
 Start your video conference meeting on free servers in the Netherlands [vc4all.nl](https://vc4all.nl/)
 
 ## Services
+
+### [Workflowy.com](https://workflowy.com/) (USA  Company!)
+
+Organize your notes and thoughts with nested bullets, very nice [workflowy.com](https://workflowy.com/)
 
 ### Prikkert.nl
 
