@@ -23,5 +23,20 @@ Sure you will have to adapt to another Office Suite but it's free and works grea
 
 ### Jitsi Meet (Video conferencing)
 
-Jitsi Meet is a fully encrypted, 100% open source video conferencing solution that you can use with no account needed [Jitsi Meet](https://jitsi.org/jitsi-meet/) 
+Jitsi Meet is a fully encrypted, open source video conferencing solution, no account needed [Jitsi Meet](https://jitsi.org/jitsi-meet/)
+
 Start your video conference meeting on free servers in the Netherlands [vc4all.nl](https://vc4all.nl/)
+
+## Services
+
+### Prikkert.nl
+
+Pick a date for a group, use Prikkert: free, no ads, no tracking, open source [prikkert.nl](https://prikkert.nl/)
+
+### Internet.nl
+
+Check your internet connection, website, mail server for up-to-date technologies [internet.nl](https://internet.nl/)
+
+### Pikapods.com
+
+Host open source apps with 1-click, automatic updates and support open source developers [pikapods.com](https://www.pikapods.com/)
