@@ -3,7 +3,11 @@ layout: default
 title: Home
 ---
 
-# Latest Blog Posts
+# Home
+
+Welcome to the blog and website of Paul Hermans, former webhosting provider now in sabbatical.
+
+## Latest Blog Posts
 
 {% for post in site.posts %}
   <article>
