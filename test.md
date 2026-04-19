@@ -1,18 +1,9 @@
 ---
 layout: default
-title: Home
+title: Test
 ---
 
-# Welcome
-
-Welcome to my personal website. Here you'll find information about me and my projects.
-
-## Latest Updates
-
-- Website launched with a clean, simple design
-- Military green theme for a professional look
-- Easy to navigate
-
+# Test Page
 
 ## Sample data for Markdown
 
