@@ -11,7 +11,7 @@ Welcome to the blog and website of Paul Hermans, former webhosting provider now 
 
 {% for post in site.posts %}
   <article>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <p class="post-meta">
       <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
       {% if post.categories %}
