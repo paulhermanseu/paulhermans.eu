@@ -5,7 +5,7 @@ title: Home
 
 # Home
 
-Welcome to the blog and website of Paul Hermans, former webhosting provider now in sabbatical.
+Welcome to my blog and website.
 
 ## Latest Blog Posts
 
@@ -13,7 +13,7 @@ Welcome to the blog and website of Paul Hermans, former webhosting provider now 
   <article>
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <p class="post-meta">
-      <span class="date">{{ post.date | date: "%d %b %Y" }}</span>
+      <span class="date">{{ post.date | date: "%d %B %Y" }}</span>
       {% if post.categories %}
         | <span class="categories">{{ post.categories | join: ", " }}</span>
       {% endif %}
