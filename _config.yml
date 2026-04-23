@@ -8,6 +8,9 @@ header_pages:
   - about.md
   - blog.md
 
+plugins:
+  - jekyll-redirect-from
+
 # Collections for blog posts
 #collections:
 #  posts:
