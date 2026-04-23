@@ -5,6 +5,8 @@ title: Contact
 
 # Contact
 
+## Email
+
 To get in contact with me you can send a mail to:
 
 ```
