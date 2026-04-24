@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaulHermans.eu - {{ page.title | default: site.title }}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -142,20 +140,19 @@
         }
         
         main pre {
-            background-color: #282c34;
-            color: #abb2bf;
+            background-color: #f4f4f4;
+            color: #222;
             padding: 1rem;
             border-radius: 5px;
             overflow-x: auto;
             margin-bottom: 1rem;
             line-height: 1.4;
+            position: relative; /* important for button */
         }
         
         main pre code {
-            background-color: transparent;
+            background: none;
             color: inherit;
-            padding: 0;
-            border-radius: 0;
         }
         
         main blockquote {
@@ -251,6 +248,23 @@
             padding: 2rem;
             margin-top: 2rem;
         }
+
+        .copy-button {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            padding: 4px 8px;
+            font-size: 0.8rem;
+            background-color: #3d6b1f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .copy-button:hover {
+            background-color: #2d5016;
+        }
     </style>
     <script data-goatcounter="https://paulhermans.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
@@ -285,11 +299,23 @@
     </footer>
     
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.querySelectorAll('pre code').forEach((el) => {
-                hljs.highlightElement(el);
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('pre').forEach((block) => {
+                const button = document.createElement('button');
+                button.innerText = 'Copy';
+                button.className = 'copy-button';
+        
+                button.addEventListener('click', () => {
+                    const code = block.querySelector('code').innerText;
+                    navigator.clipboard.writeText(code);
+        
+                    button.innerText = 'Copied!';
+                    setTimeout(() => button.innerText = 'Copy', 2000);
+                });
+        
+                block.appendChild(button);
             });
         });
-    </script>
+        </script>
 </body>
 </html>
