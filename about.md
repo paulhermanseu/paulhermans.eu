@@ -17,4 +17,7 @@ After running my own webhosting company for more than twenty years, I sold it in
 
 - Software
 - Open Source
-- Technology
+- Programming (ASP.NET)
+- Electric off-grid battery systems (Victron Energy)
+- Self-reliance and independent systems
+- Camping, nature, woods, bushcraft
