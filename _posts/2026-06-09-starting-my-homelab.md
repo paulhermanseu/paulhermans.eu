@@ -17,6 +17,15 @@ My old office pc with Intel cpu 4 cores, 8GB RAM, 1TB SSD and a 4TB HDD is my st
 
 With a 1000mbit network interface this will be ok.
 
+## Power Usage
+
+I tested the power usage of this PC to see if it's not too much:
+
+- PC idle = 20 ~ 30 watt
+- 100% cpu = 60 ~ 65 watt
+
+Pretty good I would say.
+
 ## 2. Installing Proxmox
 
 Downloaded [Proxmox VE (Virtual Environment)](https://proxmox.com/en/downloads) and put it on a USB stick.
