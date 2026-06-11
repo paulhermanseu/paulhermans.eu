@@ -88,4 +88,35 @@ And install updates:
 sudo apt update && sudo apt upgrade -y
 ```
 
+## 6. Mount the data disk
+
+When we created the VM we added a second data disk. Before we can use it, we need to partition, format and mount it.
+
+```
+# Identify the data disk (look for unformatted disk, e.g. sdb)
+lsblk
+
+# Format the disk as ext4
+sudo mkfs.ext4 /dev/sdb
+
+# Create the mount point
+sudo mkdir /mnt/datadisk
+
+# Get the disk UUID
+sudo blkid /dev/sdb
+
+# Add to fstab (replace with your actual UUID)
+sudo nano /etc/fstab
+```
+
+Add this line at the bottom of fstab:
+
+> UUID=your-uuid-here  /mnt/datadisk  ext4  defaults  0  2
+
+```
+# Mount and verify
+sudo mount -a
+df -h
+```
+
 That's it for now, your server is ready for Nextcloud installation in part 2.
