@@ -50,9 +50,11 @@ curl -o compose.yaml https://raw.githubusercontent.com/nextcloud/all-in-one/main
 nano compose.yaml
 ```
 
-We need to configure our datadisk, uncomment and edit these two lines:
+Enable hardware acceleration and configure our datadisk, uncomment and edit these lines:
 
 ```
+devices: ["/dev/dri"]
+
 environment:
  NEXTCLOUD_DATADIR: /mnt/datadisk
 ```
@@ -60,7 +62,10 @@ environment:
 Save and exit
 
 ```
+# Download the Nextcloud docker containers and start detached
 docker compose up -d
+
+# Check the logs
 docker compose logs -f
 ```
 
