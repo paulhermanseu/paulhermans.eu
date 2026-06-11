@@ -104,6 +104,10 @@ WantedBy=multi-user.target
 
 Save and exit nano.
 
+## 5. Run nextcloud
+
+Enable and start the nextcloud service.
+
 ```
 # Let systemd find the new service
 sudo systemctl daemon-reload
@@ -114,19 +118,28 @@ sudo systemctl start nextcloud.service
 
 # Verify Nextcloud is running
 sudo systemctl status nextcloud.service
-docker ps
 ```
 
+## 6. Access docker commands
+
+To access the docker logs and other commands:
+
 ```
-# Download the Nextcloud mastercontainer and start detached
-docker compose up -d
+# Change directory to where the compose.yaml file is
+cd /opt/nextcloud
 
 # Check the logs
+docker compose logs
+
+# Check the logs and keep following
 docker compose logs -f
+
+# See which containers are running
+docker compose ps
 ```
 
 
-## 5. Login to Nextcloud
+## 6. Login to Nextcloud
 
 Open your browser and login to **https://internal.ip.of.this.server:8080**
 
