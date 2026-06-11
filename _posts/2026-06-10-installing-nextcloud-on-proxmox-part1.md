@@ -52,4 +52,40 @@ Stick to the defaults unless mentioned:
 - Install OpenSSH server
 - Do not install any snap packages!
 
+## 4. QEMU Guest Agent
+
+After installation login for the first time and install the QEMU Guest Agent so Proxmox can talk to the VM.
+
+Why?
+
+- Show IP in Proxmox Summary tab
+- Clean shutdowns
+- Consistent backups (the agent freezes the filesystem during a Proxmox snapshot/backup, ensuring data integrity)
+
+```
+sudo apt install qemu-guest-agent -y
+```
+
+Is the IP address shown in the Summary tab in the Proxmox web interface?
+
+**Yes?** Great, continue.  
+**No?** Reboot and check if "Qemu Guest agent" is enabled for the VM in Proxmox under the VM options.
+
+
+## 5. Login via SSH
+
+Now let's test SSH access to confirm the VM is fully operational.
+
+Open the Terminal on your desktop:
+
+```
+ssh user@ip-address
+```
+
+And install updates:
+
+```
+sudo apt update && sudo apt upgrade -y
+```
+
 That's it for now, your server is ready for Nextcloud installation in part 2.
