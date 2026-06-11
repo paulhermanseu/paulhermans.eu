@@ -119,4 +119,4 @@ sudo mount -a
 df -h
 ```
 
-That's it for now, your server is ready for Nextcloud installation in part 2.
+That's it for now, your server is ready for [Nextcloud installation in part 2](https://www.paulhermans.eu/software/2026/06/11/installing-nextcloud-on-proxmox-part2.html).
