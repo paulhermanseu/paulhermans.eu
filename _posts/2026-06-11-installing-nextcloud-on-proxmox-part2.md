@@ -24,28 +24,25 @@ For lazy people do this:
 ```
 # Download and execute the Docker installer script
 curl -fsSL https://get.docker.com | sudo sh
+
+# Add our user to the docker group
+sudo usermod -aG docker $USER
+
+# Verify installation
+docker --version
+
+# Logout and login again to activate the docker group for our user
+logout
 ```
 
-## 2. Prepare Nextcloud user, group, directory
+## 2. Prepare Nextcloud directory and config
 
 Prepare the foundations for Nextcloud installation:
 
 ```
-# Create dedicated system user and group
-sudo useradd --system --no-create-home --shell /usr/sbin/nologin nextcloud
-
-# Add nextcloud user to the docker group
-sudo usermod -aG docker nextcloud
-
-# Prepare nextcloud installation folder
+# Make nextcloud installation directory
 sudo mkdir /opt/nextcloud
-
-# Set correct ownership
-sudo chown -R nextcloud:nextcloud /opt/nextcloud
-sudo chmod 750 /opt/nextcloud
 ```
-
-## 3. Prepare Nextcloud configuration
 
 Download the Nextcloud configuration template and edit it:
 
@@ -54,10 +51,10 @@ Download the Nextcloud configuration template and edit it:
 cd /opt/nextcloud
 
 # Download compose.yaml template
-sudo -u nextcloud curl -o compose.yaml https://raw.githubusercontent.com/nextcloud/all-in-one/main/compose.yaml
+curl -o compose.yaml https://raw.githubusercontent.com/nextcloud/all-in-one/main/compose.yaml
 
 # Edit compose.yaml
-sudo nano compose.yaml
+nano compose.yaml
 ```
 
 Enable hardware acceleration and configure our datadisk, uncomment and edit these lines:
@@ -71,75 +68,28 @@ environment:
 
 Save and exit nano.
 
-## 4. Prepare Nextcloud system service
+## 3. Run nextcloud
 
-To run Nextcloud under the nextcloud system user we create a system service:
-
-```
-# Create systemd service
-sudo nano /etc/systemd/system/nextcloud.service
-```
-
-nextcloud.service content:
-```
-[Unit]
-Description=Nextcloud AIO
-Requires=docker.service
-After=docker.service network-online.target
-Wants=network-online.target
-
-[Service]
-Type=oneshot
-RemainAfterExit=yes
-User=nextcloud
-Group=nextcloud
-WorkingDirectory=/opt/nextcloud
-ExecStart=/usr/bin/docker compose up -d
-ExecStop=/usr/bin/docker compose down
-TimeoutStartSec=300
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Save and exit nano.
-
-## 5. Run nextcloud
-
-Enable and start the nextcloud service.
-
-```
-# Let systemd find the new service
-sudo systemctl daemon-reload
-
-# Enable and start the service
-sudo systemctl enable nextcloud.service
-sudo systemctl start nextcloud.service
-
-# Verify Nextcloud is running
-sudo systemctl status nextcloud.service
-```
-
-## 6. Access docker commands
-
-To access the docker logs and other commands:
+Start Nextcloud for the first time.
 
 ```
 # Change directory to where the compose.yaml file is
 cd /opt/nextcloud
 
+# Download the Nextcloud docker containers and start detached
+docker compose up -d
+
 # Check the logs
 docker compose logs
 
-# Check the logs and keep following
+# Check the logs and keep following (CTRL+C to exit)
 docker compose logs -f
 
 # See which containers are running
 docker compose ps
 ```
 
-
-## 6. Login to Nextcloud
+## 4. Login to Nextcloud
 
 Open your browser and login to **https://internal.ip.of.this.server:8080**
 
