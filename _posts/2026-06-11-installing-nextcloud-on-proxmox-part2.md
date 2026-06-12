@@ -19,7 +19,7 @@ First we have to install docker because Nextcloud needs it.
 
 See the [Docker documentation](https://docs.docker.com/engine/install/ubuntu/#installation-methods)
 
-For lazy people do this:
+Use a convenience script:
 
 ```
 # Download and execute the Docker installer script
