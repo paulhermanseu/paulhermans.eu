@@ -84,13 +84,13 @@ shows/
 
 Keeping the naming consistent helps Jellyfin's metadata scraper match everything correctly.
 
-## 3. Login Jellyfin webinterface
+## 3. Configure Jellyfin
 
-Jellyfin will be available at:
+Login Jellyfin webinterface
 
-http://container-ip:8096
+Jellyfin will be available at: http://container-ip:8096
 
-Work through the first time wizard and add your folders /media/movies
+Work through the first time wizard and add Libraries for movies and shows and connect to your folders /media/movies and /media/shows.
 
 ## 4. How to access your media folders?
 
@@ -98,6 +98,77 @@ To make your media folder accessable on the network we are going to run a second
 
 ## 5. Create Samba container
 
+We are going to create the container:
 
+- Go back to your Proxmox webinterface
+- Click Create CT
+- Follow wizard
 
+I chose name samba01, debian 13 image, static ip, and default settings.
 
+This container got ID = 106.
+
+```
+# Open the jellyfin container config file
+nano /etc/pve/lxc/106.conf
+
+# Add this to the bottom of the file:
+mp0: /mnt/data,mp=/datadisk
+
+# reboot container
+pct start 106
+
+# login to container
+pct enter 106
+```
+
+## 6. Install + Configure Samba
+
+Go further inside the container shell:
+
+```
+# Update system
+apt update && apt upgrade -y
+
+# Install Samba
+apt install samba -y
+
+# Add user and set password
+useradd -M -s /sbin/nologin sambauser
+smbpasswd -a sambauser
+smbpasswd -e sambauser
+
+# Configure Samba
+nano /etc/samba/smb.conf
+
+# Add the share at the bottom of the file:
+[Datadisk]
+   comment = Samba Share
+   path = /datadisk
+   browseable = yes
+   read only = no
+   guest ok = no
+   valid users = sambauser
+   create mask = 0664
+   directory mask = 0775
+
+# Restart the Samba service
+systemctl status smbd
+systemctl restart smbd
+```
+
+## 7. Upload a test movie
+
+**From Linux:** Open File Explorer and navigate to: smb://192.168.1.50/Datadisk
+
+**From Windows:** Open File Explorer and navigate to: \\192.168.1.50\Datadisk
+
+Upload a test movie to the server.
+
+## 8. Watch the movie
+
+Install jellyfin app on your phone and on your TV.
+
+Or stream the movie right from the web interface.
+
+Happy days!
