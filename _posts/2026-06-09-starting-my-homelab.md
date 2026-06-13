@@ -26,13 +26,32 @@ I tested the power usage of this PC to see if it's not too much:
 
 Pretty good I would say.
 
-## 2. Installing Proxmox
+## 2. Prepare Proxmox USB stick
 
 Downloaded [Proxmox VE (Virtual Environment)](https://proxmox.com/en/downloads) and put it on a USB stick.
 
 From my Linux Zorin OS desktop I used Gnome Disks (Disks from the start menu) and option "Restore Disk Image..."
 
-Boot up and follow instructions, use your favorite AI chat if you have questions 
+(On Windows use Rufus for example.)
+
+## 3. Check the BIOS
+
+First let's check the BIOS:
+
+- Choose UEFI
+- Enable Virtualization
+- Disable Secure Boot
+- Date and time
+
+Boot from USB stick and start Proxmox installation.
+
+## 4. Proxmox installation
+
+Follow instructions, use your favorite AI chat if you have questions.
+
+I chose:
+
+- zfs(raid 0) for first disk only
 
 ## Why Proxmox?
 
@@ -46,7 +65,7 @@ I want to be able to host multiple servers on this pc => Virtualization
 
 I want to test with the following software:
 
-- AdGuard (DNS and DHCP)
+- <s>AdGuard</s> Pi-hole (DNS and DHCP)
 - TrueNAS for general File Storage
 - Home Assistant + Music Assistant
 - Immich for photos (Get rid of Google Photos)
