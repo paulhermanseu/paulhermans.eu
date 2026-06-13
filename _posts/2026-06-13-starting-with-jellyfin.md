@@ -66,24 +66,6 @@ mkdir /media/movies
 mkdir /media/shows
 ```
 
-## 4. Directory structure
-
-Jellyfin expect these directory structures:
-
-```
-movies/
-  └── Movie Name (2024)/
-      └── Movie Name (2024).mkv
-
-shows/
-  └── Show Name/
-      └── Season 01/
-          ├── Show Name S01E01.mkv
-          └── Show Name S01E02.mkv
-```
-
-Keeping the naming consistent helps Jellyfin's metadata scraper match everything correctly.
-
 ## 3. Configure Jellyfin
 
 Login Jellyfin webinterface
@@ -165,7 +147,25 @@ systemctl restart smbd
 
 Upload a test movie to the server.
 
-## 8. Watch the movie
+## 8. Directory structure
+
+Jellyfin expect these directory structures:
+
+```
+movies/
+  └── Movie Name (2024)/
+      └── Movie Name (2024).mkv
+
+shows/
+  └── Show Name/
+      └── Season 01/
+          ├── Show Name S01E01.mkv
+          └── Show Name S01E02.mkv
+```
+
+Keeping the naming consistent helps Jellyfin's metadata scraper match everything correctly.
+
+## 9. Watch the movie
 
 Install jellyfin app on your phone and on your TV.
 
