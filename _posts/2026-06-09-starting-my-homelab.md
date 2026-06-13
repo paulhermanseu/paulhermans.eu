@@ -53,6 +53,22 @@ I chose:
 
 - zfs(raid 0) for first disk only
 
+## 5. Login proxmox webinterface
+
+Now we can continue on your desktop/laptop.
+
+- Open your browser
+- Browse to https://<proxmox-ip>:8006
+
+Welcome to Proxmox :)
+
+First steps:
+
+- Updates > Repositories:
+- Disable Enterprise repositories
+- Add > No-subscription
+- Updates: Upgrade
+
 ## Why Proxmox?
 
 I want to be able to host multiple servers on this pc => Virtualization
