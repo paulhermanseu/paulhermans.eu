@@ -109,8 +109,8 @@ sr0     11:0    1  1024M  0 rom
 
 Then use ***shred*** to erase the disk.
 
--v => verbose
--n 1 => write one cycle of random values
+-v => verbose  
+-n 1 => write one cycle of random values  
 -z => write all zeros
 
 ```
@@ -126,5 +126,5 @@ shred: /dev/sdd: pass 2/2 (000000)...72MiB/1,9GiB 3%
 shred: /dev/sdd: pass 2/2 (000000)...1,9GiB/1,9GiB 100%
 ```
 
-Well this takes a long time, if you are going to throw them away it's easier to physically destroy them.
+Well this takes a long time, if you are going to throw them away it's easier to **physically destroy** them.
 
