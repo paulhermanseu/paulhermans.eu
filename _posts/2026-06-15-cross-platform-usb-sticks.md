@@ -22,9 +22,9 @@ When formatting a USB Stick to use on Linux and Windows what filesystem do you c
 
 ## Using exFAT on Linux ZorinOS
 
-Reading an USB stick with an exFAT filesystem is natively supported.
+Reading a USB stick with an exFAT filesystem is natively supported.
 
-But formatting an USB stick with exFAT is not!
+But the tools to format an USB stick with exFAT are not installed by default.
 
 From the Terminal:
 ```
@@ -43,7 +43,7 @@ Then you can use Gnome Disks to format your stick.
 
 ## What about cross platform Disk Encryption?
 
-Losing an USB stick with important documents is a nightmare, you need Disk Encryption!
+Losing a USB stick with important documents is a nightmare, you need Disk Encryption!
 
 But what if your USB stick travels between Linux and Windows PC's?
 
@@ -82,7 +82,7 @@ Have a look at <cryptomator.org>
 There is no perfect solution yet for encrypted USB sticks that works seamlessly across Linux and Windows without compromises.
 
 
-## Erasing an USB Stick on Linux ZorinOS (Terminal)
+## Erasing a USB Stick on Linux ZorinOS (Terminal)
 
 Use ***lsblk*** to determine which device is your USB stick.
 
