@@ -75,7 +75,7 @@ Originally designed for cloud storage, [cannot select my USB stick in the GUI :(
 
 You can use on Linux, but you have to copy from USB to your PC to unlock in the GUI.
 
-Have a look at <cryptomator.org>
+Have a look at [cryptomator.org](https://cryptomator.org/).
 
 ### Conclusion
 
