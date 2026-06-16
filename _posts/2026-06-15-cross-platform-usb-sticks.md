@@ -24,7 +24,7 @@ When formatting a USB Stick to use on Linux and Windows what filesystem do you c
 
 Reading a USB stick with an exFAT filesystem is natively supported.
 
-But the tools to format an USB stick with exFAT are not installed by default.
+But the tools to format a USB stick with exFAT are not installed by default.
 
 From the Terminal:
 ```
