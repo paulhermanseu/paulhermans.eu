@@ -2,7 +2,7 @@
 layout: default
 title: Adding VPN access to my Homelab
 date: 2026-06-18
-categories: Homelab Software
+categories: Homelab
 ---
 
 # Adding VPN access to my Homelab
