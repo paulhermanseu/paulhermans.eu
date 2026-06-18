@@ -81,13 +81,13 @@ I want to be able to host multiple servers on this pc => Virtualization
 
 I want to test with the following software:
 
-- <s>AdGuard</s> Pi-hole (DNS and DHCP)
+- <s>AdGuard Home</s> Pi-hole (DNS and DHCP)
 - TrueNAS for general File Storage
 - Home Assistant + Music Assistant
 - Immich for photos (Get rid of Google Photos)
 - NextCloud for files (Get rid of Dropbox)
 - Jellyfin for video streaming
-- Tailscale VPN
+- <s>Tailscale VPN</s> NetBird VPN
 - Project NOMAD
 
 The old office PC will not be able to run all of this but we will start anyway.
