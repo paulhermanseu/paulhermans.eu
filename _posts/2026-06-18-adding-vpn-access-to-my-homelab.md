@@ -29,7 +29,7 @@ The only European option seems to be to host your own OpenID service, I did not 
 
 So I had to look for Tailscale alternatives:
 
-- NetBird (Open-source, [built in Europe](https://netbird.io/careers)
+- NetBird (Open-source, [built in Europe](https://netbird.io/careers))
 - Headscale (Open-source, self-hosted, Tailscale clients compatible)
 - Twingate (USA)
 - Netmaker (USA)
