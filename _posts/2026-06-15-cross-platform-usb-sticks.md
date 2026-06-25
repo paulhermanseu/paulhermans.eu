@@ -3,6 +3,8 @@ layout: default
 title: Cross Platform USB Sticks
 date: 2026-06-15
 categories: Software
+redirect_from:
+  - /software/2026/06/15/cross-platform-usb-sticks.html
 ---
 
 # Working with USB Sticks (on Linux and Windows)
