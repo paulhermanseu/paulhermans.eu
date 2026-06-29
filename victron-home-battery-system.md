@@ -5,7 +5,7 @@ redirect_from:
   - /victron/
 ---
 
-# Victron Home Battery System
+# Victron
 
 On this page I'm going to explain how to build your own Home Battery System with Victron Energy.
 
