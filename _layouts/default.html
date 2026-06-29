@@ -142,20 +142,15 @@
         .pre-wrapper {
             position: relative;
             margin-bottom: 1rem;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .pre-wrapper .scroll-area {
-            overflow-x: auto;
         }
 
         main pre {
             background-color: #282c34;
             color: #abb2bf;
             padding: 1rem;
-            padding-top: 2.5rem; /* leave room for the copy button */
+            padding-top: 2.5rem;
             border-radius: 5px;
+            overflow-x: auto;
             margin-bottom: 0;
             line-height: 1.4;
         }
@@ -379,16 +374,10 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('pre').forEach((block) => {
-                // Wrap: .pre-wrapper > button + .scroll-area > pre
                 const wrapper = document.createElement('div');
                 wrapper.className = 'pre-wrapper';
-
-                const scrollArea = document.createElement('div');
-                scrollArea.className = 'scroll-area';
-
                 block.parentNode.insertBefore(wrapper, block);
-                scrollArea.appendChild(block);
-                wrapper.appendChild(scrollArea);
+                wrapper.appendChild(block);
 
                 const button = document.createElement('button');
                 button.innerText = 'Copy';
