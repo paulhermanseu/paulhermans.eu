@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Build your Home Energy Management System (with Victron)
+redirect_from:
+  - /victron/
 ---
 
 # Build your Home Energy Management System (with Victron)
