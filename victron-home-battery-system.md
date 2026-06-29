@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Build your Home Energy Management System (with Victron)
+title: Build your Home Battery System (with Victron)
 redirect_from:
   - /victron/
 ---
 
-# Victron Home Energy Management System
+# Victron Home Battery System
 
-On this page I'm going to explain how to build your own Home Energy Management System with Victron Energy.
+On this page I'm going to explain how to build your own Home Battery System with Victron Energy.
 
 ## Victron Energy?
 
@@ -44,13 +44,25 @@ Think about your food in the fridge and the freezer.
 
 ## Do you already have solar panels?
 
-## AC-coupling factor 1.0 rule
-
 ## 1-phase or 3-phase system?
 
 ## Choosing a location for your battery system
 
 ## Choosing the inverter size
+
+### Solar AC-coupling factor 1.0 rule
+
+You have Solar panels connected to the off-grid side (AC-OUT) of your Victron Battery inverter?
+
+RULE: "The max PV power must be equal or less than the VA rating of the inverter/charger."
+
+**EXAMPLE:**
+
+- you have 10 solar panels of 400 Wp
+- 10 x 400 Wp = **4000 Wp** total
+- your inverter needs to be equal or bigger than **4000 VA**
+
+Link: [Victron Documentation AC coupling](https://www.victronenergy.com/live/ac_coupling:start)
 
 ## Choosing the battery size
 
