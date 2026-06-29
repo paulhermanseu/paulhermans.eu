@@ -5,9 +5,9 @@ redirect_from:
   - /victron/
 ---
 
-# Build your Home Energy Management System (with Victron)
+# Victron Home Energy Management System
 
-On this page I'm going to explain how to build your own Home Energy Management System.
+On this page I'm going to explain how to build your own Home Energy Management System with Victron Energy.
 
 ## Victron Energy?
 
