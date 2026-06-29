@@ -265,6 +265,63 @@
         .copy-button:hover {
             background-color: #2d5016;
         }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+        
+            .menu-toggle {
+                display: block;
+            }
+        
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 100%;
+                background: #3d6b1f;
+                z-index: 1000;
+            }
+        
+            nav {
+                position: relative;
+            }
+        
+            .nav-menu.show {
+                display: flex;
+            }
+        
+            .nav-menu li {
+                border-top: 1px solid rgba(255,255,255,.15);
+            }
+        
+            .nav-menu a {
+                display: block;
+                padding: 1rem 20px;
+            }
+        }
     </style>
     <script data-goatcounter="https://paulhermans.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
@@ -279,7 +336,9 @@
     
     <nav>
         <div class="container">
-            <ul>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            
+            <ul class="nav-menu">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about.html">About Me</a></li>
                 <li><a href="/victron-home-battery-system.html">Victron</a></li>
@@ -316,6 +375,14 @@
         
                 block.appendChild(button);
             });
+
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+            });
+            
         });
         </script>
 </body>
