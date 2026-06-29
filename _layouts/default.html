@@ -139,15 +139,25 @@
             color: #e83e8c;
         }
         
+        .pre-wrapper {
+            position: relative;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .pre-wrapper .scroll-area {
+            overflow-x: auto;
+        }
+
         main pre {
             background-color: #282c34;
             color: #abb2bf;
             padding: 1rem;
+            padding-top: 2.5rem; /* leave room for the copy button */
             border-radius: 5px;
-            overflow-x: auto;
-            margin-bottom: 1rem;
+            margin-bottom: 0;
             line-height: 1.4;
-            position: relative; /* important for button */
         }
         
         main pre code {
@@ -250,10 +260,9 @@
         }
 
         .copy-button {
-            position: sticky;
+            position: absolute;
             top: 8px;
             right: 8px;
-            float: right;
             padding: 4px 8px;
             font-size: 0.8rem;
             background-color: #3d6b1f;
@@ -261,7 +270,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            z-index: 10;
+            z-index: 1;
         }
         
         .copy-button:hover {
@@ -370,19 +379,29 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('pre').forEach((block) => {
+                // Wrap: .pre-wrapper > button + .scroll-area > pre
+                const wrapper = document.createElement('div');
+                wrapper.className = 'pre-wrapper';
+
+                const scrollArea = document.createElement('div');
+                scrollArea.className = 'scroll-area';
+
+                block.parentNode.insertBefore(wrapper, block);
+                scrollArea.appendChild(block);
+                wrapper.appendChild(scrollArea);
+
                 const button = document.createElement('button');
                 button.innerText = 'Copy';
                 button.className = 'copy-button';
-        
+
                 button.addEventListener('click', () => {
-                    const code = block.querySelector('code').innerText;
+                    const code = block.querySelector('code') ? block.querySelector('code').innerText : block.innerText;
                     navigator.clipboard.writeText(code);
-        
                     button.innerText = 'Copied!';
                     setTimeout(() => button.innerText = 'Copy', 2000);
                 });
-        
-                block.appendChild(button);
+
+                wrapper.appendChild(button);
             });
 
             const menuToggle = document.querySelector('.menu-toggle');
