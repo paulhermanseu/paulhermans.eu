@@ -1,11 +1,14 @@
 ---
 layout: default
 title: Digital Dugnad 2026
-date: 2026-06-18
+date: 2026-07-02
 categories: Homelab
 ---
 
 # Digital Dugnad 2026
+
+> The web was meant to be open, free, and user-powered. Let’s take it back—together.
+
 
 Recently I got a mail from about Digital Dugnad: How can a dugnad save the web?
 
@@ -48,6 +51,10 @@ There are more options, will add later...
 If you would stop using **Google Drive / Google Photos** and **Microsoft Onedrive** what then?
 
 - Proton Drive = European (Switserland) [www.proton.me](https://proton.me/)
+- Nextcloud = European (Germany) [www.nextcloud.com](https://nextcloud.com)
 
-There are more options, will add later...
+## What I am using now?
 
+Right now (July 2026) I am using the Firefox browser with Ecosia search engine, Proton Mail and Proton Drive.
+
+But I'm testing others, will update this post with new insights.
