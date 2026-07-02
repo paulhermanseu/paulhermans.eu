@@ -2,15 +2,12 @@
 layout: default
 title: Digital Dugnad 2026
 date: 2026-07-02
-categories: Homelab
+categories: Software
 ---
 
 # Digital Dugnad 2026
 
-> The web was meant to be open, free, and user-powered. Let’s take it back—together.
-
-
-Recently I got a mail from about Digital Dugnad: How can a dugnad save the web?
+Recently I got a mail from Vivaldi about Digital Dugnad: How can a dugnad save the web?
 
 ## So what is a Dugnad?
 
