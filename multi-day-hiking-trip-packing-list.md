@@ -15,8 +15,9 @@ I took the bus to Venlo trainstation and started walking south. Then I walked fr
 
 ## Upcoming hiking trips 2026
 
-July 2026: Mullerthal Trail, Luxemburg
-September 2026: ["Petranpad"](https://petranpad.nl) Horst aan de Maas, The Netherlands
+**July 2026:** Mullerthal Trail, Luxemburg
+
+**September 2026:** ["Petranpad"](http://petranpad.nl) Horst aan de Maas, The Netherlands
 
 ## Campings
 
@@ -66,6 +67,7 @@ Separate bag:
 - Toothbrush
 - Toothpaste
 - Charging cable (charge phone / powerbank while showering)
+- Deodorant
 
 ## Eating & Drinking
 
