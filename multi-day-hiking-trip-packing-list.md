@@ -71,5 +71,7 @@ Separate bag:
 
 ## Eating & Drinking
 
+- Billycan with Gas and Burner and stand inside
+- Fold-A-Cup
 - Coffee drip system
 - Military ration pack
