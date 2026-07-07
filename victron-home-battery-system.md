@@ -40,7 +40,7 @@ Try to live without power for 24 hours and see how dependant we have become!
 
 Think about your food in the fridge and the freezer.
 
-# Furure topics...
+# Future topics...
 
 ## Do you already have solar panels?
 
