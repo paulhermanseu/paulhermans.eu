@@ -7,6 +7,14 @@ title: Links
 
 Links worth sharing
 
+## Blogs / Sites from interesting people
+
+### [Berthub.eu](https://berthub.eu/articles)
+
+Bert Hubert founder of PowerDNS.
+
+This post for example (in Dutch): [https://berthub.eu/articles/posts/digitale-autonomie-2-0-surf-privacy-security/](https://berthub.eu/articles/posts/digitale-autonomie-2-0-surf-privacy-security/)
+
 ## Software
 
 ### [Linux Zorin OS](https://zorin.com/)
