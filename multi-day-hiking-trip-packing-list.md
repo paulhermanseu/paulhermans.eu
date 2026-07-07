@@ -7,7 +7,7 @@ title: Multi-Day Hiking Trip Packing List
 
 This packing list is aimed towards multi-day hiking trips when walking from one camping to another.
 
-## Pierpad from Venlo to Sittard
+## Pieterpad from Venlo to Sittard
 
 Last year (June 2025) I did my first multi-day hike in The Netherlands and walked 4 days on the ["Pieterpad"](https://pieterpad.nl/)
 
