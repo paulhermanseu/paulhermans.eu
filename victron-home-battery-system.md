@@ -40,9 +40,19 @@ Try to live without power for 24 hours and see how dependant we have become!
 
 Think about your food in the fridge and the freezer.
 
-# Future topics...
-
 ## Do you already have solar panels?
+
+Of course you have! If you can, do it first, choose European hardware please (to support our own market).
+
+Enphase? No, USA  
+SolarEdge? No, Israel  
+Huawei, Sungrow, Growatt, GoodWe, Solis? No, Chinese
+
+### Choose European Solar Inverters
+
+Victron Energy (The Netherlands)  
+SMA (Germany)  
+Fronius (Austria)
 
 ## 1-phase or 3-phase system?
 
