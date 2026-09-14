@@ -82,4 +82,6 @@ Note: These settings are for LiFePO4 (LFP) battery cells.
 
 This post is under construction.
 
+Factory defaults can vary between JK-PB hardware/firmware versions. Values marked as defaults should therefore be treated as indicative unless verified on a factory-reset BMS of the relevant firmware version.
+
 See also this website: [https://off-grid-garage.com/my-settings/](https://off-grid-garage.com/my-settings/)
