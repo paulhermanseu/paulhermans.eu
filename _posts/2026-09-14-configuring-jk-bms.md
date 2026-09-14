@@ -5,20 +5,22 @@ date: 2026-09-14
 categories: Victron
 ---
 
-# Configuring JK BMS
+# Configuring JK BMS (for LFP Battery Cells)
 
-These settings are for LiFePo (LFP) batteries.
+The default settings on a JK Inverter BMS (JK-PB Series) are not good for connecting to your Victron Inverter / Charger.
+
+You will run into errors like: "High cell voltage alarm".
+
+Note: These settings are for LiFePO4 (LFP) battery cells.
 
 ## Basic Settings
 
 | Name                        | Description                                                                       | Default Value | Suggested Value                         |
 | --------------------------- | --------------------------------------------------------------------------------- | ------------- | --------------------------------------- |
-| Cell Count                  | Number of cells connected in series                                               | 16            | 16                                      |
+| Cell Count                  | Number of cells connected in series                                               | 16            | **Your actual cell count**                                        |
 | Battery Capacity (Ah)       | Nominal battery capacity used by the BMS for SOC calculation                      | 100           | **Your actual capacity**                |
 | Balance Trigger Voltage     | Minimum cell-voltage difference before balancing starts                           | 0.010 V       | 0.010 V                                 |
-| Calibrating Voltage         | Corrects the voltage measured by the BMS                                          | 52.50 V       | **Calibrate to actual battery voltage** |
-| Calibrating Current         | Corrects the current measurement of the BMS                                       | 0 A           | **Calibrate to actual current**         |
-| Start Balance Voltage       | Cell voltage above which active balancing can start                               | 3.400 V       | 3.450 V                                 |
+| Start Balance Voltage       | Cell voltage above which active balancing can start                               | 3.300 V       | **3.400 V**                                 |
 | Max Balance Current         | Maximum active balancing current                                                  | 2.0 A         | 2.0 A                                   |
 
 ## Advanced Settings
@@ -31,9 +33,13 @@ These settings are for LiFePo (LFP) batteries.
 | Cell OVPR                   | Voltage below which an OVP fault can recover                                      | 3.450 V       | **3.448 V**                             |
 | Cell UVPR                   | Voltage above which an undervoltage fault can recover                             | 3.100 V       | **2.650 V**                             |
 | SOC-0% Voltage              | Cell voltage below which SOC is reset to 0%                                       | 3.000 V       | **2.640 V**                             |
-| Cell UVP                    | Cell Under Voltage Protection; disconnects load if a cell falls below this        | 2.800 V       | 2.600 V                                 |
+| Cell UVP                    | Cell Under Voltage Protection; disconnects load if a cell falls below this        | 2.800 V       | **2.600 V**                                 |
 | Power Off Voltage           | Cell voltage at which the BMS shuts down completely                               | 2.500 V       | 2.500 V                                 |
 | Voltage Cell RFV            | Requested Float Voltage after the battery reaches 100%                            | 3.400 V       | **3.350 V**                             |
+
+
+| Name                        | Description                                                                       | Default Value | Suggested Value                         |
+| --------------------------- | --------------------------------------------------------------------------------- | ------------- | --------------------------------------- |
 | Voltage Smart Sleep         | Cell voltage associated with Smart Sleep                                          | 3.500 V       | **3.285 V**                             |
 | Time Smart Sleep            | Time condition for Smart Sleep                                                    | 24 h          | 24 h                                    |
 | Continued Charge Current    | Maximum continuous charging current; BMS reports ~95% of this to the charger      | 100 A         | **105 A**                               |
@@ -74,4 +80,6 @@ These settings are for LiFePo (LFP) batteries.
 | Con. Wire Resistance        | Continuous-wire resistance compensation                                           | 0.00 mΩ       | 0.00 mΩ                                 |
 
 
-This post is under construction
+This post is under construction.
+
+See also this website: [https://off-grid-garage.com/my-settings/](https://off-grid-garage.com/my-settings/)
